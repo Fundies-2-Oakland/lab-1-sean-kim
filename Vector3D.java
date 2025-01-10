@@ -1,7 +1,7 @@
 public class Vector3D {
-    private double x;
-    private double y;
-    private double z;
+    double x;
+    double y;
+    double z;
 
     public Vector3D(double x, double y, double z) {
         this.x = x;
@@ -9,22 +9,24 @@ public class Vector3D {
         this.z = z;
     }
 
-    public double getX() {
+    public double getx() {
         return x;
     }
 
-    public double getY() {
+    public double gety() {
         return y;
     }
 
-    public double getZ() {
+    public double getz() {
         return z;
     }
-
-    public static void main(String[] args) {
-        Vector3D vector = new Vector3D(1.0, 2.0, 3.0);
-        System.out.println("X: " + vector.getX());
-        System.out.println("Y: " + vector.getY());
-        System.out.println("Z: " + vector.getZ());
+    public static void main(String[] args)
+    {
+        Vector3D e = new Vector3D(2.0, 2.0, 3.0);
+        System.out.println("x: " + e.getx());
+        System.out.println("y: " + e.gety());
+        System.out.println("z: " + e.getz());
     }
 }
+
+
